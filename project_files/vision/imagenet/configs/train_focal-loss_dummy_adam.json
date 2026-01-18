@@ -1,0 +1,25 @@
+{
+    "model_params" : {
+        "lr" : 1e-3,
+        "weight_decay": 0.3,
+        "gamma" : 2.0
+    },
+    "mode_params" : {},
+    "constraint_params" : {},
+    "architecture" : "ViT",
+    "deep_supervision" : false,
+    "training_params" : {
+        "seed" : 0,
+        "val_check_interval" : 1.0,
+        "num_workers" : 8,
+        "gradient_clip_val" : 1.0,
+        "precision" : "medium",
+        "pin_memory" : true,
+        "persistent_workers" : true,
+        "max_epochs" : 300,
+        "batch_size" : 512,
+        "lr_scheduler": "cosine",
+        "warmup_epochs": 10,
+        "split_ratio" : 0.9
+    }
+}

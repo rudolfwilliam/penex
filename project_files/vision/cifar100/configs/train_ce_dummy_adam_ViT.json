@@ -1,0 +1,18 @@
+{
+    "model_params" : {
+        "lr" : 1e-4
+    },
+    "mode_params" : {},
+    "constraint_params" : {},
+    "architecture" : "ViT",
+    "training_params" : {
+        "seed" : 0,
+        "val_check_interval" : 1.0,
+        "num_workers" : 1,
+        "gradient_clip_val" : 15.0,
+        "precision" : "medium",
+        "max_epochs" : 800,
+        "batch_size" : 64,
+        "split_ratio" : 0.8
+    }
+}

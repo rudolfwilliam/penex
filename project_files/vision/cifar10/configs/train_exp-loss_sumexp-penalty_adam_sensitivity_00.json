@@ -1,0 +1,18 @@
+{
+    "model_params" : {
+        "lr" : 1e-4,
+        "sensitivity" : 0.00001
+    },
+    "mode_params" : {},
+    "constraint_params" : {},
+    "training_params" : {
+        "seed" : 0,
+        "gradient_clip_val" : 10.0,
+        "num_workers" : 1,
+        "precision" : "medium",
+        "max_epochs" : 200,
+        "batch_size" : 64,
+        "val_check_interval" : 1.0,
+        "split_ratio" : 0.8
+    }
+}
